@@ -104,7 +104,7 @@ namespace PennyWise3
             while (categoryHeap.Count > 0)
             {
                 var (category, totalSpending) = categoryHeap.Dequeue();
-                recommendations.AppendLine($"Category: {category} - Total Spending: ${-totalSpending}");
+                recommendations.AppendLine($"Category: {category} - Total Spending: PKR{-totalSpending}");
 
                 if (-totalSpending > 30000)
                 {
